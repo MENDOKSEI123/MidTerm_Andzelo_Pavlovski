@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">4522</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="HomePage.html">HOME</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+<header>
+    <h1>Contacts</h1>
+</header>
+<form id="frm" name="frm" onsubmit="return SaveInfo(this)">
+
+        <div class="form-group col-md-7 mb-4">
+            <label for="Surname">Surname</label>
+            <input type="text" class="form-control" required minlength="10" name="srnm" id="srnm" size="10"
+                   aria-describedby="textHelp">
+        </div>
+        <div class="form-group col-md-7 mb-4">
+            <label for="Name">Name</label>
+            <input type="text" class=" form-control" required name="nm" id="nm" size="10"
+                   aria-describedby="textHelp">
+        </div>
+        <div class="form-group col-md-7 mb-4">
+            <label for="id">ID</label>
+            <input type="number" class="form-control" name="idto" id="idto" size="10"
+                   aria-describedby="IDHelp">
+        </div>
+        <div class="form-group col-md-7 mb-4">
+            <label for="Email">Email</label>
+            <input type="email" required class="form-control" name="mail" id="mail" size="10"
+                   aria-describedby="mailHelp">
+        </div>
+        <div class="form-group col-md-7 mb-4">
+            <label for="Note"> Note </label>
+            <input type="text" class="form-control" name="nt" id="nt" size="10"
+                   aria-describedby="noteHelp">
+        </div>
+
+        <div class="form-group col-md-7">
+
+            <button type="submit" class="btn btn-success" id="save">Save</button>
+        </div>
+        <div class="alert alert-light col-md-8" role="alert">
+            <p id="result" class="time"></p>
+        </div>
+
+
+</form>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.js"></script>
+<script src="ContactInfo.js"></script>
+</html>
